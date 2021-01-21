@@ -150,7 +150,6 @@ header > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: left;
 }
 /* ========== END HEADER ========== */
 
@@ -219,8 +218,7 @@ header > .container {
 }
 
 .descript-list > li {
-  width: 270px;
-  height: 75px;
+  width: calc((100% - (3 * 30px)) / 4);
 }
 
 .descript-list {
@@ -246,6 +244,7 @@ header > .container {
 
 .pictures-list {
   display: flex;
+  margin-top: 50px;
 }
 
 .pictures-list > li:not(:last-child) {
@@ -268,8 +267,13 @@ header > .container {
   padding-bottom: 94px;
 }
 
+.section-title {
+  margin: 0;
+}
+
 .team-list {
   display: flex;
+  margin-top: 50px;
 }
 
 .team-list > li {
@@ -311,7 +315,7 @@ header > .container {
 }
 
 .card-info {
-  padding: 30px 59px;
+  padding: 30px;
 }
 
 /* ========== END OUR TEAM ========== */
@@ -322,6 +326,10 @@ header > .container {
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.location {
+  margin: 0;
 }
 
 .footer .link-logo {
@@ -352,8 +360,8 @@ header > .container {
   display: inline-block;
 }
 
-.footer-list-item,
-.address {
+.location,
+.footer-list-item {
   margin-bottom: 9px;
 }
 
@@ -426,7 +434,7 @@ header > .container {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--working-title);
-  margin-bottom: 4px;
+  margin: 0;
 }
 
 .working-type {
@@ -448,4 +456,4 @@ header > .container {
   background: var(--hero-title-color);
 }
 
-/* ========== END PORTFOLIO ========== */ ;
+/* ========== END PORTFOLIO ========== */
