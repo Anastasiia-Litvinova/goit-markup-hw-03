@@ -54,6 +54,9 @@ body {
 
 button {
   cursor: pointer;
+  padding: 0;
+  border: none;
+  font: inherit;
 }
 
 /* ========== END COMPONENTS ========== */
@@ -111,7 +114,6 @@ button {
 
 .contacts-list {
   display: flex;
-  padding: 32px;
 }
 
 .current,
@@ -133,6 +135,8 @@ button {
 .contact-link {
   font-weight: 500;
   color: inherit;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header {
